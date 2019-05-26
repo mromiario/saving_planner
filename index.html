@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Saving Planner</title>
+        <link href="./style.css" rel="stylesheet" type="text/css" media="screen">
+       
+    </head>
+    <body>
+        <div id="header">
+                <h1><img src="./love.png" alt="my save planning" height="42" width="42"> my saving planner</h1>
+                <ul>
+                    <li><a href="#priority">work</a></li>
+                    <li><a href="#basic">basic-needs</a></li>
+                    <li><a href="#tersier">additional-needs</a></li>
+                </ul>
+                
+        </div>
+        <div id="priority">
+            <div class="form" id="first">
+                    <p>
+                        <label for = "income">Your monthly income :</label>
+                        <input id="income" name="income" type="text" value="" placeholder="Your monthly income in Rupiah, e.g. 5000000">
+                        <span>IDR</span>
+                    </p>
+        
+                    <p>
+                        <label for = "days">How often you go to work in a week?</label>
+                        <input id="days" name="days" type="number" value="5" min="1" max="7">
+                        <span>time(s)</span>
+                    </p>
+                </div>
+
+        </div>
+        <div id="basic">
+                <h5>Let's speak about your basic needs!</h5>
+                <div class="form">
+                    <p>
+                        <label for = "residence">Residence Costs (per month) :</label>
+                        <input id="residence" name="residence" type="text" value="" placeholder="Your residence costs in a month, e.g. 1000000">
+                        <span>IDR</span>
+                    </p>
+        
+                    <p>
+                        <label for = "transport">Transportation Costs (per day) :</label>
+                        <input id="transport" name="transport" type="text" value="" placeholder="Your round-trip from home to your work place, e.g. 21000">
+                        <span>IDR</span>
+                    </p>
+        
+                    <p>
+                        <label for = "food">Food Costs (per one meal) :</label>
+                        <input id="food" name="food" type="text" value="" placeholder="Your food cost in one meal, e.g. 20000">
+                        <span>IDR</span>
+        
+                        <label for = "foodC">How many times have you eaten a day?</label>
+                        <input id="foodC" name="foodC" type="number" value="3" min="0" max="10">
+                        <span>time(s)</span>
+                    </p>
+        
+                </div>
+        </div>
+        
+        <div id="tersier">
+                <h5>Let's speak about your additional needs!</h5>
+                <div class="form">
+                    <p>
+                        <p>
+                            <label for = "tv">TV&Internet (per month) :</label>
+                            <input id="tv" name="tv" type="text" value="" placeholder="Your bills for Internet & TV, e.g. 100000">
+                            <span>IDR</span>
+                        </p>
+        
+                        <p>
+                            <label for = "laundry">Laundry (per month) :</label>
+                            <input id="laundry" name="laundry" type="text" value="" placeholder="Your bills for laundry, e.g. 55000">
+                            <span>IDR</span>
+                        </p>
+        
+                        <p>
+                            <label for = "lyf">Lifestyle (per month) :</label>
+                            <input id="lyf" name="lyf" type="text" value="" placeholder="Your lifestyle routines, e.g. 200000">
+                            <span>IDR</span>
+                        </p>
+        
+                        <p>
+                            <label for = "other">Others (per month) :</label>
+                            <input id="other" name="other" type="text" value="" placeholder="Tips: Spare your saving budget to the emergency ocassion, e.g. 200000">
+                            <span>IDR</span>
+                        </p>
+        
+                            <button id="submit" onclick="count()">Calculate!</button>
+                            <button id="reset" onclick="location.reload()">Reset</a></button>
+        
+                </div>
+        </div>
+        <footer>
+             <p>Copyright 2019 - mromiario</p>
+            <p id="closing">
+                this calculation works efficiently for the student, fresh-graduate, and an unmarried person
+            </p>
+        </footer>
+        <script src="./save_planner.js"></script>
+    </body>
+</html>
+
+
