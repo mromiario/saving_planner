@@ -53,8 +53,8 @@ function count(){
     }else if(isNaN(otherNumb) || other == ""){
         alert("Other must be filled by number!")
     } else{
-        var transportDay = transportNumb*days*4
-        var foodDay = foodNumb*7*foodC
+        var transportDay = transportNumb*days*4;
+        var foodDay = foodNumb*7*foodC*4;
         var saveMoney = incomeNumb-residenceNumb-transportDay-foodDay-tvNumb-laundryNumb-lyfNumb-otherNumb;
         var additionalNeeds = tvNumb+laundryNumb+lyfNumb+otherNumb;
         var totalMoney = income-saveMoney ;
@@ -72,11 +72,11 @@ function count(){
             msg += "You can save "+saveMoney+" IDR from your income."+"\n";
             msg += "In a year you can have "+saveMoney*12+" IDR"+"\n";
             msg += "Here the details, in a month you've spent:"+"\n";
-            msg += residence + " IDR for your residence."+"\n";
+            msg += residenceNumb + " IDR for your residence."+"\n";
             msg += transportDay + " IDR for your transportation."+"\n";
-            msg += "    "+transport+" IDR in a day x 4 weeks x "+days+" days (days you go to work)"+"\n";
+            msg += "    "+transportDay+" IDR in a day x 4 weeks x "+days+" days (days you go to work)"+"\n";
             msg += foodDay + " IDR for your food."+"\n";
-            msg += "    "+food+" IDR in a day x 4 weeks x 7 days (days in a week)"+"\n";
+            msg += "    "+(foodNumb*foodC)+" IDR in a day x 4 weeks x 7 days (days in a week)"+"\n";
             msg += "and, "+additionalNeeds+" IDR, for your additional needs."+"\n"
             msg += "Total: "+(totalMoney)+"\n";
         
