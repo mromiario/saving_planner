@@ -244,10 +244,14 @@ footer #closing{
       }  
 
       .form{
-        max-width: 95%;
+        max-width: 90%;
         margin:  auto;
-        padding-left: 5%
+        padding-left: 20%;
         
+    }
+    
+    span{
+     font-weight : bold;   
     }
 
     #submit, #reset{
