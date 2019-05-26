@@ -74,7 +74,7 @@ function count(){
             msg += "Here the details, in a month you've spent:"+"\n";
             msg += residenceNumb + " IDR for your residence."+"\n";
             msg += transportDay + " IDR for your transportation."+"\n";
-            msg += "    "+transportDay+" IDR in a day x 4 weeks x "+days+" days (days you go to work)"+"\n";
+            msg += "    "+transportNumb+" IDR in a day x 4 weeks x "+days+" days (days you go to work)"+"\n";
             msg += foodDay + " IDR for your food."+"\n";
             msg += "    "+(foodNumb*foodC)+" IDR in a day x 4 weeks x 7 days (days in a week)"+"\n";
             msg += "and, "+additionalNeeds+" IDR, for your additional needs."+"\n"
