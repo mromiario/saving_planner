@@ -239,7 +239,6 @@ footer #closing{
         box-sizing: border-box;
         border: 2px solid rgb(114, 136, 83);
         border-radius: 10px;
-        font-weight : bold;
         width: 84%;
         padding: 2%;
       }  
